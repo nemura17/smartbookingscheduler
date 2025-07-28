@@ -41,7 +41,7 @@ class WorkingHoursController extends Controller
             );
         }
 
-        return new WorkingHoursCollection($serviceProvider->workingHours);
+        return new WorkingHoursCollection(WorkingHours::where('service_provider_id', $serviceProvider->id)->get());
     }
 
     public function fetchWorkingHours(Request $request, ServiceProvider $serviceProvider): WorkingHoursCollection | JsonResponse
