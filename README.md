@@ -14,7 +14,7 @@ composer install
 ```
 
 ```bash
-npm install && npm run build
+npm install
 ```
 
 ```bash
