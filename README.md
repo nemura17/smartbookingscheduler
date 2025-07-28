@@ -1,10 +1,26 @@
 # HOMEWORK: APPOINTMENT BOOKING SCHEDULER
 
-
-## Cloning the Project
+## Projekto klonavimas
 
 ```bash
 git clone https://github.com/nemura17/smartbookscheduler.git
 cd smartbookscheduler
+```
 
+## Projekto konfigūracija
 
+```bash
+composer install
+```
+
+```bash
+npm install && npm run build
+```
+
+```bash
+php artisan migrate --seed
+```
+
+```bash
+composer run dev
+```
