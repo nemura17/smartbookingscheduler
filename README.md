@@ -10,6 +10,10 @@ cd smartbookscheduler
 ## Projekto konfigūracija
 
 ```bash
+code .
+```
+
+```bash
 composer install
 ```
 
