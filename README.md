@@ -30,5 +30,6 @@ php artisan migrate --seed
 ```
 
 ```bash
-composer run dev
+composer run dev arba
+php artisan serve (php -d variables_order=GPCS artisan serve) ir npm run dev atskiruose terminaluose
 ```
