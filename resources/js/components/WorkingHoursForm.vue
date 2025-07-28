@@ -1,5 +1,6 @@
 <template>
     <h4 class = 'font-bold text-sm ml-2'> Pasirinkite darbo dienas ir jų darbo laikus </h4>
+    <p class = 'text-sm font-bold text-gray-400 ml-2'> Darbo valandų pavyzdys: 08:00 - 17:00. Į įvestas minučių reikšmes šiuo metu neatsižvelgiama, t.y., jeigu įvesite 08:30 - 17:00, galimi pasirinkimo laukai išliks nuo 08:00. Nustatya vienos paslaugos trukmė - 1 valanda. </p>
     <div v-for = '(day, index) in weekdays' :key = 'index'>
         <div @click = 'toggleDay(day)' class = 'cursor-pointer px-4 py-2 rounded-md border transition-colors' 
             :class = "[day.is_active ? 'bg-black text-white border-black' : 'bg-white text-black border-gray-300']">
