@@ -15,8 +15,8 @@ Klientas mato pagrindinį langą, kuriame palaipsniui atlieka šiuos veiksmus: <
 ## Projekto klonavimas
 
 ```bash
-git clone https://github.com/nemura17/smartbookscheduler.git
-cd smartbookscheduler
+git clone https://github.com/nemura17/smartbookingscheduler.git
+cd smartbookingscheduler
 ```
 
 ## Projekto konfigūracija
