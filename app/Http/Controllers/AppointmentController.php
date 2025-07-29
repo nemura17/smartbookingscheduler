@@ -15,7 +15,7 @@ class AppointmentController extends Controller
         $validatedData = $request->validated();
         $isAlreadyBooked = Appointment::where('service_provider_id', $validatedData['service_provider_id'])
             ->whereDate('appointment_date', $validatedData['appointment_date'])
-            ->whereTime('appointment_time', $validatedData['appointment_time'])
+            ->where('appointment_time', $validatedData['appointment_time'])
             ->exists();
 
         if ($isAlreadyBooked) {

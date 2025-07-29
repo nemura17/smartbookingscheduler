@@ -72,7 +72,7 @@
                     successMessage.value = '';
                 }, 3000);
             }).catch(error => {
-                errorMessage.value = 'Įvyko klaida! Peržiūrėkite įvestus duomenis ir bandykite dar kartą.';
+                errorMessage.value = error.response.data.message ?? 'Įvyko klaida! Peržiūrėkite įvestus duomenis ir bandykite dar kartą.';
             });
         }
     }
